@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error - The Tobec</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- media -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <!-- error-page -->
+
+    <section class="error-page wow fadeIn" data-wow-duration="1s">
+        <div class="container">
+            <div class="error fix-part text-white">
+                <h2 class="text-uppercase m-0 text-white wow bounceIn">
+                    404
+                </h2>
+                <h3 class="text-white text-uppercase my-3 wow bounceIn">oops...</h3>
+                <p class="mb-0 wow bounceIn">We Couldn’t find what you’re looking for…</p>
+                <a href="index.html" class="text-decoration-none d-flex justify-content-center mt-5 wow bounceIn">
+                    <div
+                        class="btn rounded-0 border-0 bg-white text-black d-flex justify-content-center align-items-center ">
+                        go to home</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- all -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- animation -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // loader js 
+
+        $('#loader').show();
+
+        setTimeout(function () {
+            $('#loader').fadeOut('slow', function () {
+                $('#content').fadeIn('slow');
+            });
+        }, 1000);
+        
+    </script>
+
+</body>
+
+</html>
